@@ -43,5 +43,10 @@ img.gif-style{
     font-weight: bold;
     font-family: 'Handlee', cursive;
     margin: 100px;
-  
+    max-height: 80vh;
+    overflow: auto;
+}
+#giphy-view{
+    display: flex;
+    flex-wrap: wrap;
 }
