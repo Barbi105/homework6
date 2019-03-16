@@ -4,7 +4,7 @@
 
 $(document).ready(function(){
 
-    var topics = ["Earth", "Space", "Supernova", "Asteroid", "Venus", "Jupiter", "Star", "Rocket", "Astronaut", "Comet", "Big Bang"]
+    var topics = ["Earth", "Space", "Supernova", "Asteroid", "Venus", "Jupiter", "Star", "Rocket", "Astronaut", "Comet"]
     
     function giphyGenerator(arg){
 $("#giphy-view").empty();
@@ -24,7 +24,6 @@ $("#giphy-view").empty();
             for(var i=0;i<result.length;i++){
                 var gif_div = $("<div>");
                 var p = $("<p>").text("Rating: " + result[i].rating);
-
                 var gifImg = $("<img>");
                 gif_div.addClass("pictureBlock");
                 gifImg.attr("src", result[i].images.downsized_still.url);

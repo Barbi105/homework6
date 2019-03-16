@@ -12,7 +12,7 @@ body{
 button{
     border-radius: 8px;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     border: 2px solid #542B8A;
     padding: 10px;
@@ -36,7 +36,44 @@ button:hover{
 img.gif-style{
     height: 200px;
     width: 200px;
+    border: 1px solid #542B8A;
+
 }
+
+img.gif-style:hover {
+    -webkit-animation-name: wiggle;
+    -ms-animation-name: wiggle;
+    -ms-animation-duration: 1000ms;
+    -webkit-animation-duration: 1000ms;
+    -webkit-animation-iteration-count: 1;
+    -ms-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+    -ms-animation-timing-function: ease-in-out;
+    }
+    
+    @-webkit-keyframes wiggle {
+    0% {-webkit-transform: rotate(10deg);}
+    25% {-webkit-transform: rotate(-10deg);}
+    50% {-webkit-transform: rotate(20deg);}
+    75% {-webkit-transform: rotate(-5deg);}
+    100% {-webkit-transform: rotate(0deg);}
+    }
+    
+    @-ms-keyframes wiggle {
+    0% {-ms-transform: rotate(1deg);}
+    25% {-ms-transform: rotate(-1deg);}
+    50% {-ms-transform: rotate(1.5deg);}
+    75% {-ms-transform: rotate(-5deg);}
+    100% {-ms-transform: rotate(0deg);}
+    }
+    
+    @keyframes wiggle {
+    0% {transform: rotate(10deg);}
+    25% {transform: rotate(-10deg);}
+    50% {transform: rotate(20deg);}
+    75% {transform: rotate(-5deg);}
+    100% {transform: rotate(0deg);}
+    }
 
 .jumbotron{
     background:  rgba(255,255,255,0.5);
@@ -44,11 +81,11 @@ img.gif-style{
     font-weight: bold;
     font-family: 'Handlee', cursive;
     margin: 100px;
-    max-height: 80vh;
+    max-height: 93vh;
     overflow: auto;
 }
 #giphy-view{
     display: flex;
     flex-wrap: wrap;
-    
+    margin-left: 100px
 }
